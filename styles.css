@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid 1px greenyellow; */
+}
+
+:root {
+    --primaryColor: #EBBB0F;
+    --whiteColor: rgb(241, 241, 235);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: var(--whiteColor);
+}
+
+/* CLASES REUTILIZABLES */
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #EBBB0F;
+    padding: 10px 35px;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #EBBB0F;
+}
+
+.titles {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 50pxs 0px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.decorations {
+    color: var(--primaryColor);
+}
+
+/* CLASES REUTILIZABLES */
+
+/* NAVEGACION  */
+
+.navbar {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navbar-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-logo-img {
+    width: 25px;
+}
+
+.navbar-logo-text {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar-menu-items {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-item {
+    padding: 10px 5px;
+}
+
+.navbar-item a {
+    padding: 10px 5px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+}
+
+.navbar-item a:hover {
+    color: var(--primaryColor);
+}
+
+/* NAVEGACION  */
+
+/* PORTADA */
+
+.container-header {
+    padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header-title {
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 64px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.content-header-paragrahp {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+/* PORTADA */
+
+/* SECCION INMORTALIZANDO MOMENTOS */
+
+.section-moments {
+    margin-top: 100px
+}
+
+.content-section-moements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.content-section-moments-img {
+    width: 500px;
+    height: 500px;
+}
+
+.content-section-moments-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.content-section-moments-paragrahp {
+    width: 55%;
+}
+
+/* SECCION INMORTALIZANDO MOMENTOS */
+
+
+/* SECCION GALERIA  */
+.container-galery {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* margin-top: 100px; */
+    /* background-color: #EBBB0F; */
+}
+
+.paragrahp-galery {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.content-galery {
+    padding-top: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows:  minmax(200px, 1fr);
+    justify-content: center;
+    gap: 25px;
+    grid-auto-flow: dense;
+   
+}
+
+
+
+.target-photo {
+    background-color: #c4c3bf;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.target-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.wive{
+    grid-column:  span 2;
+}
+
+.tall{
+    grid-row: span 2;
+}
+
+.wave-section {
+    width: 100%;
+    height: 50%;
+}
+
+.section-contact {
+    margin-top: -5px;
+    height: 500px;
+    background-color: black
+}
+
+.title-contact {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 50pxs 0px;
+    color: white;
+}
+
+
+/* SECCION GALERIA  */
